@@ -232,6 +232,18 @@ padding-bottom: 24px;
 .item-principal p:last-child{
 text-align: justify;
 }
+@media(max-width: 600px) {
+.item-principal p:first-child{
+padding-top: 60px;
+}
+.item-principal .item-1{
+padding-top: 20px;
+}
+.item-principal h2{
+padding-top: 85px;
+padding-bottom: 18px;
+}
+}
 
 /* Mapa */
 .mapa h2 {
@@ -260,6 +272,7 @@ height: 58px;
 @media(max-width: 600px) {
 .footer-bg {
 height: auto;
+margin-bottom: 0px;
 }
 .footer-bg h2{
 height: auto;
