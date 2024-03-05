@@ -1,0 +1,268 @@
+""@font-face {
+font-family: 'Tahoma';
+src: url('fonts/Tahoma400.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+/* Tipos de format()
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (Aple Advanced Typography)
+- svg */
+}
+/* Global */
+html, 
+body {
+margin: 0px;
+padding: 0px;
+background: #F0F0F0;
+}
+h1,
+h2,
+h3,
+ul,
+p{
+margin: 0px;
+}
+ul {
+margin: 0px;
+padding: 0px;
+}
+a {   
+font: inherit;
+color: inherit;
+}
+img {
+height: auto;
+display: block;
+max-width: 100%;
+}
+::-webkit-scrollbar {
+width: 7px;
+background-color: rgb(35, 38, 41);
+}
+::-webkit-scrollbar-thumb {
+background-color: var(--cor-p1);
+border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+.js [data-anime="scroll"] {
+opacity: 0;
+transform: translate3d(-30px, 0, 0);
+transition: .3s;
+}
+.js [data-anime="scroll"].ativo {
+opacity: 1;
+transform: translate3d(0px, 0, 0);
+}
+
+/* Componentes */
+.container {
+box-sizing: border-box;
+max-width: 1000px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+.center {
+margin: auto;
+text-align: center;
+}
+
+/* Cores */
+:root {
+--cor-0: #ffffff;
+--cor-1: #FCFCFC;
+--cor-2: #FAFAFA;
+--cor-3: #F8F8F8;
+--cor-4: #cccccc;
+--cor-5: #b2b2b2;
+--cor-6: #9c9c9c;
+--cor-7: #717171;
+--cor-8: #595959;
+--cor-9: #404040;
+--cor-10: #2e2e2e;
+--cor-11: #1a1a1a;
+--cor-12: #0e0e0e;
+--cor-13: #000000;
+--cor-p1: #D59601;
+}
+.cor-0 {
+color: var(--cor-0);
+}
+.cor-1 {
+color: var(--cor-1);
+}
+.cor-2 {
+color: var(--cor-2);
+}
+.cor-3 {
+color: var(--cor-3);
+}
+.cor-4 {
+color: var(--cor-4);
+}
+.cor-5 {
+color: var(--cor-5);
+}
+.cor-6 {
+color: var(--cor-6);
+}
+.cor-7 {
+color: var(--cor-7);
+}
+.cor-8 {
+color: var(--cor-8);
+}
+.cor-9 {
+color: var(--cor-9);
+}
+.cor-10 {
+color: var(--cor-10);
+}
+.cor-11 {
+color: var(--cor-11);
+}
+.cor-12 {
+color: var(--cor-12);
+}
+.cor-13 {
+color: var(--cor-13);
+}
+.cor-p1 {
+color: var(--cor-p1);
+}
+
+/* Tipografia */
+.font-1-xxl {
+font: 700 2rem/0.83 "Tahoma", sans-serif;
+}
+.font-1-xl {
+font: 600 1.125rem/1.5 "Tahoma", sans-serif;
+}
+.font-1-l {
+font: 500 1.5rem/0.83 "Tahoma", sans-serif;
+}
+.font-1-s {
+font: 500 1.125rem/1.6 "Tahoma", sans-serif;
+}
+
+.cabecalho-bg {
+background: var(--cor-13);
+width: 100%;
+height: auto;
+position: fixed;
+}
+.cabecalho h1{
+padding-top: 44px;
+padding-bottom: 12px;
+}
+.cabecalho nav .menu {
+display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+}
+.cabecalho nav .menu li{
+margin-left: 20px;
+list-style: none;
+padding: 20px 0px;
+}
+.cabecalho nav .menu li + li{
+margin-left: 20px;
+}
+.cabecalho nav .menu a{
+text-decoration: none;
+position: relative;
+}
+.cabecalho nav .menu a:after {
+content: "";
+width: 100%;
+height: 3px;
+background-color: var(--cor-p1);
+display: block; 
+margin-top: 0px;
+transition: 0.3s;
+position: absolute; /* Realinhando ao centro */
+}
+@media (max-width: 600px) {
+.cabecalho-bg {
+position: relative;
+}
+}
+
+/* Introduçao */
+.introducao-bg {
+width: 100%;
+height: 1000px;
+background-image: url(../assets/banner.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+@media (max-width: 600px) {
+.introducao-bg {
+width: 100%;
+height: 300px;
+background-size: cover;
+}
+}
+
+/* Carro */
+.item-principal p:first-child{
+padding-top: 80px;
+}
+.item-principal .item-1{
+padding-top: 41px;
+}
+.item-principal h2{
+padding-top: 114px;
+padding-bottom: 36px;
+}
+.item-principal img {
+object-fit: cover;
+max-width: 100%;
+height: 253px;
+padding-bottom: 24px;
+}
+.item-principal p:last-child{
+text-align: justify;
+}
+
+/* Mapa */
+.mapa h2 {
+padding-top: 114px;
+padding-bottom: 36px;
+}
+.mapa iframe {
+max-width: 100%;
+height: 442px;
+}
+
+/* Footer */
+.footer-bg {
+background: #1D1D1D;
+margin-top: 58px;
+margin-bottom: 72px;
+max-width: calc(1000px - 40px);
+height: 58px;
+}
+.footer-bg h2{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 58px;
+}
+@media(max-width: 600px) {
+.footer-bg {
+height: auto;
+}
+.footer-bg h2{
+height: auto;
+}
+}
