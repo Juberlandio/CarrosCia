@@ -208,7 +208,7 @@ background-size: cover;
 @media (max-width: 600px) {
 .introducao-bg {
 width: 100%;
-height: 300px;
+height: 220px;
 background-size: cover;
 }
 }
@@ -221,7 +221,7 @@ padding-top: 80px;
 padding-top: 41px;
 }
 .item-principal h2{
-padding-top: 114px;
+padding-top: 170px;
 padding-bottom: 36px;
 }
 .item-principal img {
