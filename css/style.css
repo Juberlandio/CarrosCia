@@ -156,6 +156,8 @@ background: var(--cor-13);
 width: 100%;
 height: auto;
 position: fixed;
+z-index: 3;
+border-bottom: 1px solid var(--cor-p1);
 }
 .cabecalho h1{
 padding-top: 44px;
